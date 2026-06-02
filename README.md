@@ -1,4 +1,4 @@
-# MFP Live Call-and-Response
+# Live Call-and-Response
 
 Realtime symbolic-music call-and-response prototype for MIDI improvisation.
 

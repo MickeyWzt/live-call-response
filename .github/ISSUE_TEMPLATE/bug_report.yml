@@ -1,0 +1,45 @@
+name: Bug report
+description: Report a reproducible problem with realtime MIDI, the web studio, or offline evaluation
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the exact command or UI flow.
+      placeholder: |
+        1. Run ...
+        2. Select MIDI port ...
+        3. Play ...
+        4. See ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Windows 11, Python 3.12, loopMIDI
+    validations:
+      required: true
+  - type: input
+    id: midi
+    attributes:
+      label: MIDI routing
+      placeholder: Input port, output port, DAW or virtual MIDI setup
+  - type: input
+    id: backend
+    attributes:
+      label: Backend and model
+      placeholder: amt / aria, model ID, offline or online
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste the smallest useful log excerpt.

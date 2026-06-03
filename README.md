@@ -11,6 +11,15 @@ the Call as symbolic events, and generates an AI Response with an autoregressive
 Transformer backend. It also includes a local browser interface with MIDI device
 selection, a virtual keyboard, and rhythm-game-style note visualization.
 
+## At a Glance
+
+| Field | Details |
+| --- | --- |
+| Project status | Research prototype for realtime MIDI call-and-response experiments. |
+| Best for | Symbolic music generation, live MIDI routing, and thesis-style evaluation workflows. |
+| First thing to try | Set up Python 3.12, create loopMIDI ports, and launch the local web studio. |
+| Important caveat | Model weights, Hugging Face caches, DAWs, plugins, and audio sample libraries are not bundled. |
+
 ## Project Links
 
 - [Development guide](docs/DEVELOPMENT.md)

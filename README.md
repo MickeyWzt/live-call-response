@@ -1,5 +1,7 @@
 # Live Call-and-Response
 
+[![CI](https://github.com/MickeyWzt/live-call-response/actions/workflows/ci.yml/badge.svg)](https://github.com/MickeyWzt/live-call-response/actions/workflows/ci.yml)
+
 Realtime symbolic-music call-and-response prototype for MIDI improvisation.
 
 The system listens to a human MIDI performer, detects phrase endpoints, encodes

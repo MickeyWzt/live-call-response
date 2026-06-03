@@ -1,7 +1,7 @@
 """
-切脉大师: MIDI VAD endpoint detector.
+Pulse Cutter: MIDI VAD endpoint detector.
 
-Implements the endpoint rule described in 论文内容.pdf:
+Implements the endpoint rule described in the thesis notes:
 
     S(tau) = exp(-mu_tempo * tau)
     S(tau_cutoff) = theta
@@ -297,7 +297,7 @@ class MidiEndpointVAD:
 
 def print_decision(decision: EndpointDecision) -> None:
     pitches = [event.pitch for event in decision.phrase]
-    print("\n[切脉大师] Endpoint detected")
+    print("\n[Pulse Cutter] Endpoint detected")
     print(f"  phrase_len     : {len(decision.phrase)} notes")
     print(f"  onset_clusters : {decision.onset_cluster_count}")
     print(f"  pitches        : {pitches}")
@@ -346,7 +346,7 @@ def run_simulation(args: argparse.Namespace) -> None:
         MidiNoteEvent(9.64, 62),
     ]
 
-    print("[切脉大师] simulation started")
+    print("[Pulse Cutter] simulation started")
     print(
         "[formula] S(tau)=exp(-mu_tempo*tau), "
         "tau_cutoff=ln(1/theta)/mu_tempo"
@@ -370,7 +370,7 @@ def run_simulation(args: argparse.Namespace) -> None:
         vad.tick(probe_time)
         probe_time += args.poll_interval
 
-    print("\n[切脉大师] simulation finished")
+    print("\n[Pulse Cutter] simulation finished")
 
 
 def list_midi_ports() -> None:
@@ -417,7 +417,7 @@ def run_live(args: argparse.Namespace) -> None:
         on_endpoint=print_decision,
     )
 
-    print(f"[切脉大师] listening on MIDI input: {port_name}")
+    print(f"[Pulse Cutter] listening on MIDI input: {port_name}")
     if args.duration:
         print(f"Auto-stop after {args.duration:.1f} seconds.")
     else:
@@ -442,7 +442,7 @@ def run_live(args: argparse.Namespace) -> None:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="切脉大师: nonhomogeneous-Poisson MIDI VAD endpoint detector"
+        description="Pulse Cutter: nonhomogeneous-Poisson MIDI VAD endpoint detector"
     )
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--simulate", action="store_true", help="run built-in MIDI event simulation")

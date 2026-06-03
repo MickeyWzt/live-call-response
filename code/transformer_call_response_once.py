@@ -1,5 +1,5 @@
 """
-注入灵魂: one-shot Transformer call-and-response demo.
+Soul Injector: one-shot Transformer call-and-response demo.
 
 This script wires jthickstun/anticipation into our local system for a
 non-realtime generation pass:

@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest an improvement to the realtime engine, UI, backend, or evaluation tools
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What musical or workflow problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the behavior, UI, command, metric, or backend change.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Realtime or evaluation impact
+      description: Note likely effects on latency, phrase detection, musical output, or experiment reproducibility.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

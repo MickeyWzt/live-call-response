@@ -24,6 +24,7 @@ selection, a virtual keyboard, and rhythm-game-style note visualization.
 
 - [Development guide](docs/DEVELOPMENT.md)
 - [FAQ](docs/FAQ.md)
+- [Examples](docs/EXAMPLES.md)
 - [Support and troubleshooting](SUPPORT.md)
 - [Changelog](CHANGELOG.md)
 - [Roadmap](ROADMAP.md)

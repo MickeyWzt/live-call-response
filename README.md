@@ -7,6 +7,14 @@ the Call as symbolic events, and generates an AI Response with an autoregressive
 Transformer backend. It also includes a local browser interface with MIDI device
 selection, a virtual keyboard, and rhythm-game-style note visualization.
 
+## Project Links
+
+- [Support and troubleshooting](SUPPORT.md)
+- [Roadmap](ROADMAP.md)
+- [Contributing guide](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
+- [Third-party attribution](THIRD_PARTY.md)
+
 ## Features
 
 - Dynamic MIDI endpoint detection with note-on/note-off capture

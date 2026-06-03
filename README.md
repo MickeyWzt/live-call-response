@@ -18,6 +18,7 @@ selection, a virtual keyboard, and rhythm-game-style note visualization.
 - [Changelog](CHANGELOG.md)
 - [Roadmap](ROADMAP.md)
 - [Contributing guide](CONTRIBUTING.md)
+- [Code of conduct](CODE_OF_CONDUCT.md)
 - [Security policy](SECURITY.md)
 - [Third-party attribution](THIRD_PARTY.md)
 
